@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .logoupload {
+    margin: 10px 0 10px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 5px;
+    width: 192px;
+    height: 132px;
+    margin-top: -45px;
+}</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0px!important;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="titinfo"><span class="red">*</span>公司LOGO</div>
+                <input type="text" class="form-control" id="logoName" />
+                <input type="file" value="" class="labelinput01" id="attchmentLogo" onchange="xmTanUploadImg(this)"
+                    accept="image/*" style="display:none" />
+                <label style="padding-left:20px" id="filenamelabel"></label>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 clearbtn">
+                <a href="javascript:void(0);" id="uploadLogo" style="margin-top: 8px;line-height: 30px;width:70%">
+                    选择文件
+                </a>
+            </div>
+            <br />
+            <div style="margin-top: 112px;">
+                <div class="logoupload" id="previewcompanyLogo">
+                </div>
+                <span class="red">请选择图片格式</span><br />
+                <span class="red">请注意尺寸</span>
+            </div>
+            <input type="hidden" name="CompanyLogo" id="companyLogo" />
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    //选择图片，马上预览
+    function xmTanUploadImg(obj) {
+        var preview = document.querySelector('#previewcompanyLogo');
+        var viewfile = document.querySelector('#logoName');
+        var file = obj.files[0];
+        viewfile.value = file.name;
+        // 确认选择的文件是图片
+        if (file.type.indexOf("image") == 0) {
+            var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = function (e) {
+                // 图片base64化
+                var newUrl = this.result;
+                preview.style.backgroundImage = 'url(' + newUrl + ')';
+                preview.style.backgroundPosition = 'center';
+                preview.style.backgroundSize = 'cover';
+            };
+        }
+    }
+</script>
