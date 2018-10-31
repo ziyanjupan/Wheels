@@ -1,0 +1,11 @@
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\bin\Debug\netcoreapp2.1\AboutEnum.deps.json
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\bin\Debug\netcoreapp2.1\AboutEnum.runtimeconfig.json
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\bin\Debug\netcoreapp2.1\AboutEnum.runtimeconfig.dev.json
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\bin\Debug\netcoreapp2.1\AboutEnum.dll
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\bin\Debug\netcoreapp2.1\AboutEnum.pdb
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.csprojAssemblyReference.cache
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.csproj.CoreCompileInputs.cache
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.AssemblyInfoInputs.cache
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.AssemblyInfo.cs
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.dll
+D:\GitHub\Wheels\BackEnd\Components\ListEnum\obj\Debug\netcoreapp2.1\AboutEnum.pdb
